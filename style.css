@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap");
 body {
   margin: 0;
   background: black;
   -webkit-transition: background-color 2s linear;
   transition: background-color 2s linear;
-  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 .complete-part {
@@ -71,6 +72,7 @@ body {
   transition: all 0.3s linear, background-color 2s linear, border 2s linear, -webkit-box-shadow 0.3s linear, -webkit-transform 0.3s linear;
   transition: all 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear, background-color 2s linear, border 2s linear;
   transition: all 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear, background-color 2s linear, border 2s linear, -webkit-box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+  font-family: "Roboto Mono", monospace;
 }
 
 .lower-part .button:hover {
