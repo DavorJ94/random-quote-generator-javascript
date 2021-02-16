@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background: black;
-  transition: background 2s linear;
+  transition: background-color 2s linear;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
     "Times New Roman", serif;
 }
@@ -72,7 +72,6 @@ body {
     font-size: 14px;
     line-height: 30px;
     color: black;
-    transition: all 0.3s linear;
     display: block;
   }
 
@@ -81,7 +80,11 @@ body {
     box-shadow: none;
   }
 }
-
+#author,
+#text,
+.quotes {
+  transition: color 2s linear;
+}
 #author {
   font-weight: 800;
   font-size: 16px;
@@ -102,12 +105,11 @@ body {
   vertical-align: middle;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s linear, background-color 2s linear, border 2s linear;
+  transition: background-color 2s linear, border 2s linear;
 }
 .tweetfb:hover {
   transform: scale(1.05);
   box-shadow: 5px 5px 2px black;
-  transition: all 0.3s linear;
 }
 .tweetfb:focus {
   outline: none;
@@ -118,6 +120,7 @@ body {
 }
 .quotes {
   font-size: 30px;
+  transition: color 2s linear;
 }
 @media (max-width: 780px) {
   #quote-box {
