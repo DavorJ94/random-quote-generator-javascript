@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Random quote generator using JQuery">
+    <meta name="keywords" content="HTML, CSS, JavaScript, JQuery, API">
+    <meta name="author" content="Davor Jovanovic">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./tab-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="./dynamics.js"></script>
+    <title>Random Quote Generator</title>
+  </head>
+
+  <body>
+
+    <div class="complete-part">
+      <div id="quote-box">
+        <h1>
+          <span class="quotes">" </span
+          ><span id="text"></span
+          ><span class="quotes"> "</i></span>
+        </h1>
+        <p id="author"></p>
+        <div class="lower-part">
+          <a
+            id="tweet-quote"
+            href="https://twitter.com/intent/tweet"
+            target="_blank"
+            title = "Post on Twitter"
+          >
+            <button class="tweetfb">
+              <i class="fa fa-twitter fa-lg"></i>
+            </button>
+          </a>
+          <a
+            id="facebook-quote"
+            href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/davorjovanovic/pen/abZGyPa"
+            target="_blank"
+            title = "Post on Facebook"
+          >
+            <button class="tweetfb">
+              <i class="fa fa-facebook fa-lg"></i>
+            </button>
+          </a>
+          <button id="new-quote" class="button">
+            <span>New quote</span>
+          </button>
+        </div>
+        <div class="credentials">by <a href="https://www.linkedin.com/in/davor-jovanovi%C4%87/" target="blank_">DavorJ</a></div>
+      </div>
+
+
+    </div>
+  </body>
+</html>

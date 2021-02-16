@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  background: black;
+  transition: background 2s linear;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+    "Times New Roman", serif;
+}
+
+.complete-part {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+}
+.credentials {
+  position: relative;
+  top: 80px;
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  a {
+    text-decoration: none;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+}
+#quote-box {
+  width: 40%;
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  padding: 3em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: white;
+  box-shadow: 15px 15px 8px black;
+  border-radius: 0.5em;
+  display: block;
+}
+.lower-part {
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 2em;
+  vertical-align: middle;
+
+  .button {
+    margin-left: auto;
+    border-radius: 3px;
+    width: 150px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    outline-color: #000000;
+    outline-offset: 0px;
+    transition: all 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear,
+      background-color 2s linear, border 2s linear;
+  }
+
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px black;
+    outline: 3px #ffffff solid;
+    outline-offset: 8px;
+  }
+  span {
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color: black;
+    transition: all 0.3s linear;
+    display: block;
+  }
+
+  .button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+#author {
+  font-weight: 800;
+  font-size: 16px;
+  width: 100%;
+  text-align: right;
+}
+#text {
+  font-weight: bold;
+  font-size: 30px;
+}
+.fa {
+  color: white;
+  margin: auto;
+}
+.tweetfb {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s linear, background-color 2s linear, border 2s linear;
+}
+.tweetfb:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 2px black;
+  transition: all 0.3s linear;
+}
+.tweetfb:focus {
+  outline: none;
+  box-shadow: none;
+}
+#facebook-quote {
+  margin-left: 10px;
+}
+.quotes {
+  font-size: 30px;
+}
+@media (max-width: 780px) {
+  #quote-box {
+    width: 70%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 300px) {
+  #text {
+    font-size: 16px;
+  }
+  #author {
+    font-size: 8px;
+  }
+}
